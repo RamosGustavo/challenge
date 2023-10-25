@@ -1,0 +1,40 @@
+.cg-dashboard-pages-bebidas-add {
+    &-container {
+        width: 100%;
+        max-width: 600px;
+        height: 430px;
+        margin: 70px auto;
+        padding: 40px;
+        background-color: #b1b1b1;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.404);
+
+        &-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        &-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-fotter {
+            text-align: center;
+
+            .cg-dashboard-pages-bebidas-add-container-fotter-button {
+                background-color: #119622;
+                color: #fff;
+                font-size: 18px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .mat-mdc-form-field {
+        height: 65px !important;
+    }
+}
