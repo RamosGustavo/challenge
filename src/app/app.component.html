@@ -1,13 +1,5 @@
-
-<!-- 1) Iniciar un proyecto desde cero con ANGULAR 16 (usar Angular CLI)
-2) Hacer una navegación mínima, por lo menos 2 vistas
-3) a)En una vista hacer un formulario que en algún campo use la librería: NGX-MASK (aunque sea para un teléfono o algo usá una máscara)
-b) Ese formulario al tocar ENVIAR que abra una modal donde se muestren los datos que escribiste en el formulario (podés usar tailwind, bootstrap, material, lo que quieras para la modal)
-4 a)Para la segunda vista: Instalar y utilizar la librería IGNITE UI para hacer una Tabla (usá la GRID que es como un excel)
-b) Hacer un mock (datos falsos para rellenar la tabla, puede ser lo que quieras incluso el ejemplo que suele traer la tabla)  -->
-
-<div>
-  <button routerLink="/formulario" type="primary">Formulario</button>
-  <button routerLink="/tabla" type="primary">Tabla</button>
+<div class="navbar">
+  <a routerLink="/formulario" class="nav-link">Formulario</a>
+  <a routerLink="/tabla" class="nav-link">Tabla</a>
 </div>
 <router-outlet></router-outlet>
