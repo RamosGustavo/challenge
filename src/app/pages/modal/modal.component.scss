@@ -1,3 +1,62 @@
+div {
+    .cg-modal {
+        padding: 20px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: #333;
+            justify-content: start;
+
+            li {
+                font-size: 18px;
+                margin-bottom: 10px;
+                color: #333;
+                justify-content: start;
+            }
+        }
+    }
+
+    mat-dialog-actions {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 25px;
+
+        button {
+            margin-left: 10px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &.mat-dialog-close {
+                background-color: #ccc;
+                color: #333;
+            }
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+}
+
+
+
 .mat-mdc-dialog-container {
     display: flex;
     position: absolute;
@@ -8,3 +67,6 @@
     justify-content: center;
 }
 
+.mat-mdc-dialog-actions.mat-mdc-dialog-actions-align-end, .mat-mdc-dialog-actions[align=end] {
+    justify-content: center; 
+}

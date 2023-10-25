@@ -12,6 +12,12 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { IgxPreventDocumentScrollModule } from "./directives/prevent-scroll.directive";
+import { HttpClientModule } from "@angular/common/http";
+import { 
+	IgxGridModule,
+	IgxInputGroupModule
+} from "igniteui-angular";
 
 
 
@@ -32,7 +38,11 @@ import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
     ReactiveFormsModule,
     BrowserAnimationsModule,
     NgxMaskDirective,
-    NgxMaskPipe
+    NgxMaskPipe,
+    IgxPreventDocumentScrollModule,
+    HttpClientModule,
+    IgxGridModule,
+    IgxInputGroupModule
   ],
   providers: [provideNgxMask(),],
   bootstrap: [AppComponent]
