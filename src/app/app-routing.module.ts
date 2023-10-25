@@ -6,7 +6,8 @@ import { TablaComponent } from './pages/tabla/tabla.component';
 
 const routes: Routes = [
   { path: 'formulario', component: FormularioComponent},
-  { path: 'tabla',  component: TablaComponent}
+  { path: 'tabla',  component: TablaComponent},
+  { path: '**', component: FormularioComponent},
 ];
 
 

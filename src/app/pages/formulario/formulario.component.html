@@ -6,21 +6,21 @@
         <form [formGroup]="drinksForm" class="cg-dashboard-pages-bebidas-add-container-form">
             <mat-form-field>
                 <mat-label>Nombre</mat-label>
-                <input formControlName="BebidaName" type="BebidaName" matInput />
+                <input formControlName="BebidaName" type="text" matInput />
                 <mat-error style="color: red" *ngIf="drinksForm.get('BebidaName')?.hasError('required')">El nombre es
                     requerido</mat-error>
             </mat-form-field>
 
             <mat-form-field>
                 <mat-label>Tipo</mat-label>
-                <input formControlName="Tipo" type="Tipo" matInput />
+                <input formControlName="Tipo" type="text" matInput />
                 <mat-error style="color: red" *ngIf="drinksForm.get('Tipo')?.hasError('required')">Tipo es
                     requerido</mat-error>
             </mat-form-field>
 
             <mat-form-field>
                 <mat-label>Precio</mat-label>
-                <input [hiddenInput]="true" mask="XXXXX" formControlName="Precio" type="Precio" matInput />
+                <input [hiddenInput]="true" mask="XXXXX" formControlName="Precio" matInput />
                 <mat-error *ngIf="drinksForm.get('Precio')?.hasError('required')">Precio es requerido</mat-error>
                 <mat-error style="color: red" *ngIf="drinksForm.get('Precio')?.hasError('pattern')">El numero no es
                     valido</mat-error>
@@ -29,7 +29,7 @@
 
             <mat-form-field>
                 <mat-label>Stock</mat-label>
-                <input formControlName="Stock" type="Stock" matInput />
+                <input formControlName="Stock" type="number" matInput />
                 <mat-error style="color: red" *ngIf="drinksForm.get('Stock')?.hasError('required')">Stock es
                     requerido</mat-error>
                 <mat-error style="color: red" *ngIf="drinksForm.get('Stock')?.hasError('pattern')">El Stock no es
@@ -38,7 +38,7 @@
 
             <mat-form-field>
                 <mat-label>Descripcion</mat-label>
-                <input formControlName="Descripcion" type="Descripcion" matInput />
+                <input formControlName="Descripcion" type="text" matInput />
                 <mat-error style="color: red" *ngIf="drinksForm.get('Descripcion')?.hasError('required')">Descripcion es
                     requerido</mat-error>
             </mat-form-field>
