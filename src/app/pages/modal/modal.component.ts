@@ -14,11 +14,6 @@ export class ModalComponent implements OnInit {
   constructor( @Inject(MAT_DIALOG_DATA) public data: any, public dialogRef: MatDialogRef<any>, public dialog: MatDialog,) {}
 
   ngOnInit(): void {
-    console.log(this.data);
-    
     this.infoForm = this.data.data;
   }
-
-
-
 }

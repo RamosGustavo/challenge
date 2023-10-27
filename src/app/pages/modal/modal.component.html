@@ -1,17 +1,21 @@
-<div>
-    <mat-dialog-content class="cg-modal">
-        <h2>Datos guardados</h2>
-        <div>
-            <ul>
-                <li>Bebida: {{ infoForm.BebidaName }}</li>
-                <li>Tipo: {{ infoForm.Tipo }}</li>
-                <li>Precio: {{ infoForm.Precio }}</li>
-                <li>Stock: {{ infoForm.Stock }}</li>
-                <li>Descripcion: {{ infoForm.Descripcion }}</li>
-            </ul>
-        </div>
-    </mat-dialog-content>
-    <mat-dialog-actions align="end">
-        <button mat-button mat-dialog-close>Cancel</button>
-    </mat-dialog-actions>
-</div>
+<section class="cg-pages-modal">
+    <div class="cg-pages-modal-container">
+        <mat-dialog-content class="cg-pages-modal-container-information">
+            <div class="cg-pages-modal-container-information-title">
+                <h2 class="cg-pages-modal-container-information-title-style">Datos guardados</h2>
+            </div>
+            <div class="cg-pages-modal-container-information-information">
+                <ul>
+                    <li>Bebida: {{ infoForm.BebidaName }}</li>
+                    <li>Tipo: {{ infoForm.Tipo }}</li>
+                    <li>Precio: {{ infoForm.Precio }}</li>
+                    <li>Stock: {{ infoForm.Stock }}</li>
+                    <li>Descripcion: {{ infoForm.Descripcion }}</li>
+                </ul>
+            </div>
+        </mat-dialog-content>
+        <mat-dialog-actions class="cg-pages-modal-container-button" align="center">
+            <button class="cg-pages-modal-container-button-style" mat-button mat-dialog-close>Cancel</button>
+        </mat-dialog-actions>
+    </div>
+</section>

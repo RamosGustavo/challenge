@@ -1,72 +1,52 @@
-div {
-    .cg-modal {
-        padding: 20px;
-        display:flex;
+.cg-pages-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+    padding-left: 14px;
+
+
+    .cg-pages-modal-container {
+        background-color: #ccc;
+        position: fixed;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 880px;
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .cg-pages-modal-container-information {
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-            color: #333;
-            justify-content: start;
-
-            li {
-                font-size: 18px;
-                margin-bottom: 10px;
-                color: #333;
-                justify-content: start;
-            }
-        }
     }
 
-    mat-dialog-actions {
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        margin-top: 25px;
+    .cg-pages-modal-container-information-title-style {
+        font-size: 44px;
+        font-weight: 700;
+    }
 
-        button {
-            margin-left: 10px;
-            background-color: #007bff;
-            color: #fff;
-            font-size: 16px;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+    .cg-pages-modal-container-button-style {
+        width: 100px;
+        height: 40px;
+        background-color: #119622;
+        border: none;
+        border-radius: 8px;
+    }
 
-            &.mat-dialog-close {
-                background-color: #ccc;
-                color: #333;
-            }
-
-            &:hover {
-                background-color: #0056b3;
-            }
+    @media (max-width: 768px) {
+        .cg-pages-modal-container {
+            max-width: 80%;
         }
     }
 }
 
-
-
-.mat-mdc-dialog-container {
-    display: flex;
-    position: absolute;
-    min-width: 500px;
-    height: 400px;
-    margin-top: 300px;
-    padding-left: 200px;
-    justify-content: center;
+.cdk-overlay-pane {
+    max-width: 100vw !important;
 }
 
-.mat-mdc-dialog-actions.mat-mdc-dialog-actions-align-end, .mat-mdc-dialog-actions[align=end] {
-    justify-content: center; 
+.mat-mdc-dialog-surface {
+    background-color: #d8d8d8 !important;
 }

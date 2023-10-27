@@ -36,4 +36,10 @@
     .mat-mdc-form-field {
         height: 65px !important;
     }
+
+    @media screen and (max-width: 767px) {
+        .cg-dashboard-pages-bebidas-add-container {
+            max-width: 90%;
+        }
+    }
 }

@@ -27,7 +27,6 @@ export class FormularioComponent {
   constructor(public dialog: MatDialog,) { }
 
   onSubmit() {
-    console.log(this.drinksForm);
     if (this.drinksForm.valid) {
       this.dialog.open(ModalComponent, {
         data: {

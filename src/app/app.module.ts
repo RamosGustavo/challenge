@@ -33,6 +33,7 @@ import {
 	IgxSparklineCoreModule,
 	IgxSparklineModule
 } from "igniteui-angular-charts";
+
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 
 //I keep the new line
