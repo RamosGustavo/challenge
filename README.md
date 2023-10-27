@@ -10,12 +10,17 @@ ng add @angular/material
 
 Luego la libreria para esconder los numeros, con sus importaciones
 
-npm i ngx-mask
+ngx-mask
 
-Y por ultimo la ultima libreria, que seria la tabla
+Y por ultimo la libreria para generar la tabla.
 
-npm i igniteui-angular-charts
+igniteui-angular
 
-npm install  igniteui-cli
 
-ng add igniteui-angular
+******************************************************************
+
+Pasos para iniciar el proyecto.
+
+1_ Clonar el proyecto
+2_ En la raiz del proyecto correr el siguiente comando : "npm install"
+3_ Y finalmente para levantar el proyecto: "ng serve -o"
