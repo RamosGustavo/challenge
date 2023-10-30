@@ -21,7 +21,7 @@
             <mat-form-field>
                 <mat-label>Precio</mat-label>
                 <input [hiddenInput]="true" mask="XXXXX" formControlName="Precio" matInput />
-                <mat-error *ngIf="drinksForm.get('Precio')?.hasError('required')">Precio es requerido</mat-error>
+                <mat-error style="color: red" *ngIf="drinksForm.get('Precio')?.hasError('required')">Precio es requerido</mat-error>
                 <mat-error style="color: red" *ngIf="drinksForm.get('Precio')?.hasError('pattern')">El numero no es
                     valido</mat-error>
                     <mat-error style="color: red" *ngIf="drinksForm.get('Precio')?.hasError('mask')">Ingrese 5 numeros</mat-error>
